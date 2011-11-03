@@ -1,3 +1,9 @@
+# revision 23397
+# category Package
+# catalog-ctan /macros/latex/required/babel
+# catalog-date 2011-06-29 21:13:30 +0200
+# catalog-license lppl
+# catalog-version 3.8m
 Name:		texlive-babel
 Version:	3.8m
 Release:	1
@@ -329,6 +335,7 @@ switch from one language to another in a variety of ways.
 %doc %{_texmfdistdir}/source/generic/babel/usorbian.dtx
 %doc %{_texmfdistdir}/source/generic/babel/welsh.dtx
 %doc %{_texmfdistdir}/source/generic/babel/welsh.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -339,3 +346,5 @@ switch from one language to another in a variety of ways.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar makeindex tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
