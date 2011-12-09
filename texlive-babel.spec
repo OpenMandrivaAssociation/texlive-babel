@@ -1,12 +1,12 @@
-# revision 23397
+# revision 24756
 # category Package
 # catalog-ctan /macros/latex/required/babel
-# catalog-date 2011-06-29 21:13:30 +0200
+# catalog-date 2011-10-07 15:38:55 +0200
 # catalog-license lppl
 # catalog-version 3.8m
 Name:		texlive-babel
 Version:	3.8m
-Release:	1
+Release:	2
 Summary:	Multilingual support for Plain TeX or LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/babel
@@ -18,31 +18,33 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The package manages culturally-determined typographical (and
 other) rules, and hyphenation patterns for a wide range of
 languages. A document may select a single language to be
-supported, or it may select several, and the document may then
-switch from one language to another in a variety of ways.
+supported, or it may select several, in which case the document
+may switch from one language to another in a variety of ways.
+Note that the package has contributions for several languages
+that remain to be incorporated. Examples are: Arabic; Magyar
+(Hungarian); Serbian written in cyrillic; Spanish; and Spanish,
+using Mexican conventions.. Users of XeTeX are advised to use
+polyglossia rather than Babel.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
