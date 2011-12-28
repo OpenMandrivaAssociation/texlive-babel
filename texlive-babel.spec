@@ -31,16 +31,8 @@ that remain to be incorporated. Examples are: Arabic; Magyar
 using Mexican conventions.. Users of XeTeX are advised to use
 polyglossia rather than Babel.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -338,7 +330,6 @@ polyglossia rather than Babel.
 %doc %{_texmfdistdir}/source/generic/babel/usorbian.dtx
 %doc %{_texmfdistdir}/source/generic/babel/welsh.dtx
 %doc %{_texmfdistdir}/source/generic/babel/welsh.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -349,5 +340,3 @@ polyglossia rather than Babel.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar makeindex tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
