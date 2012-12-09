@@ -340,3 +340,22 @@ polyglossia rather than Babel.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar makeindex tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.8m-3
++ Revision: 749443
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.8m-2
++ Revision: 739667
+- texlive-babel
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.8m-1
++ Revision: 717877
+- texlive-babel
+- texlive-babel
+- texlive-babel
+- texlive-babel
+- texlive-babel
+
