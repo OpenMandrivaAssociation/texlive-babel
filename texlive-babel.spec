@@ -1,12 +1,12 @@
-# revision 31886
+# revision 32311
 # category Package
 # catalog-ctan /macros/latex/required/babel/base
-# catalog-date 2013-05-16 19:39:08 +0200
+# catalog-date 2013-12-03 18:59:06 +0100
 # catalog-license lppl1.3
-# catalog-version 3.9f
+# catalog-version 3.9h
 Name:		texlive-babel
-Version:	3.9f
-Release:	5
+Version:	3.9h
+Release:	1
 Summary:	Multilingual support for Plain TeX or LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/babel/base
@@ -103,6 +103,7 @@ are advised to use polyglossia rather than Babel.
 %{_texmfdistdir}/tex/generic/babel/welsh.sty
 %{_texmfdistdir}/tex/generic/babel/xebabel.def
 %doc %{_texmfdistdir}/doc/latex/babel/CONTRIB
+%doc %{_texmfdistdir}/doc/latex/babel/FIXES39
 %doc %{_texmfdistdir}/doc/latex/babel/README
 %doc %{_texmfdistdir}/doc/latex/babel/babel.pdf
 #- source
