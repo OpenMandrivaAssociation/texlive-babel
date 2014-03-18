@@ -1,11 +1,11 @@
-# revision 32311
+# revision 33185
 # category Package
 # catalog-ctan /macros/latex/required/babel/base
-# catalog-date 2013-12-03 18:59:06 +0100
+# catalog-date 2014-03-15 10:21:52 +0100
 # catalog-license lppl1.3
-# catalog-version 3.9h
+# catalog-version 3.9i
 Name:		texlive-babel
-Version:	3.9h
+Version:	3.9i
 Release:	1
 Summary:	Multilingual support for Plain TeX or LaTeX
 Group:		Publishing
