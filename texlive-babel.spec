@@ -6,7 +6,7 @@
 # catalog-version 3.9i
 Name:		texlive-babel
 Version:	3.9i
-Release:	1
+Release:	2
 Summary:	Multilingual support for Plain TeX or LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/babel/base
