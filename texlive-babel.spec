@@ -1,6 +1,6 @@
 Name:		texlive-babel
-Version:	3.22
-Release:	2
+Version:	3.29
+Release:	1
 Summary:	Multilingual support for Plain TeX or LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/babel/base
