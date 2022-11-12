@@ -5,9 +5,9 @@ Summary:	Multilingual support for Plain TeX or LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/babel/base
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.r64797.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.doc.r64797.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.source.r64797.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
