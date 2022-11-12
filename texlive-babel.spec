@@ -1,13 +1,13 @@
 Name:		texlive-babel
-Version:	3.30
+Version:	64797
 Release:	1
 Summary:	Multilingual support for Plain TeX or LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/babel/base
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.r64797.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.doc.r64797.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.source.r64797.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +24,12 @@ detail of what has to be done for each language. Users of XeTeX
 are advised to use polyglossia rather than Babel.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,7 +41,8 @@ are advised to use polyglossia rather than Babel.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
