@@ -1,5 +1,5 @@
 Name:		texlive-babel
-Version:	72134
+Version:	72469
 Release:	1
 Summary:	Multilingual support for Plain TeX or LaTeX
 Group:		Publishing
