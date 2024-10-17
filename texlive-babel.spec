@@ -3,7 +3,7 @@ Version:	72469
 Release:	1
 Summary:	Multilingual support for Plain TeX or LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/required/babel/base
+URL:		https://www.ctan.org/tex-archive/macros/latex/required/babel/base
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel.doc.r%{version}.tar.xz
